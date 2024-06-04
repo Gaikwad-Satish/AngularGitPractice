@@ -50,6 +50,7 @@ export class CreateUserComponent implements OnInit{
       this.us.updateUser(this.userReg.value).subscribe();
       alert('User datails updated successfully..!')
       this.userReg.reset();
+      console.log("git push success")
       window.location.reload();
     }
    
