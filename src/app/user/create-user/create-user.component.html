@@ -1,0 +1,35 @@
+<form [formGroup]="userReg" (ngSubmit)="onSubmitUserForm()">
+
+
+<h1 class="text-center mb-5">
+    <i class="fa fa-user-plus" aria-hidden="true"></i>Sign up here..!
+
+</h1>
+<div class="form-outline mb-3">
+    <input type="text" id="nm" class="form-control" formControlName="id"/>
+    <label class="form-label" for="id">Enter ID</label>
+</div>
+
+<div class="form-outline mb-3">
+    <input type="text" id="nm" class="form-control" formControlName="name"/>
+    <label class="form-label" for="nm">Enter Name</label>
+</div>
+
+<div class="form-outline mb-3">
+    <input type="email" id="email" class="form-control" formControlName="emailId"/>
+
+    <label class="form-label" for="email">Enter Email</label>
+</div>
+
+<div class="form-outline mb-3">
+    <input type="text" id="ps" class="form-control" formControlName="password"/>
+
+    <label class="form-label" for="ps">Enter Password</label>
+</div>
+
+<button type="submit" class="btn btn-primary btn-block mb-4">Sign Up</button>
+
+
+
+
+</form>

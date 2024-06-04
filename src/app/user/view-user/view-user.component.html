@@ -1,0 +1,36 @@
+<h1 class="text-center mb-5">
+    <i class="fa fa-th-list" aria-hidden="true"></i>User Records..!
+
+</h1>
+
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th scope="col">User ID</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <th scope="row">{{u.id}}</th>
+            <td>{{u.name}}</td>
+            <td>{{u.emailId}}</td>
+            <td>{{u.password}}</td>
+            <td>
+                <button class="btn btn-primary me-1" (click)="onEditUser(u)">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+
+                </button>
+                <button class="btn btn-primary me-1" (click)="onDeleteUser(u.id)">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+
+                </button>
+            </td>
+
+        </tr>
+    </tbody>
+
+</table>

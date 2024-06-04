@@ -1,0 +1,13 @@
+<div class="row w-100 text-center m-0 bg-danger">
+  <h1 style="color :white;">User CRUD Application..!</h1>
+</div>
+<div class="row w-100 m-0 p-2">
+  <div class="col-6 border border-danger border">
+    <app-create-user [userToBeEdit]="editUser"></app-create-user>
+
+  </div>
+  <div class="col-6 border border-danger border">
+    <!-- <h1>We will have next component over here</h1> -->
+    <app-view-user (editData)="patchEditData($event)"></app-view-user>
+  </div>
+</div>
